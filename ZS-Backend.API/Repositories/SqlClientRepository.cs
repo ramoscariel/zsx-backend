@@ -35,7 +35,6 @@ namespace ZS_Backend.API.Repositories
                 return null;
             }
 
-            // Update Properties
             existingClient.Name = client.Name;
             existingClient.DocumentNumber = client.DocumentNumber;
             existingClient.DocumentType = client.DocumentType;

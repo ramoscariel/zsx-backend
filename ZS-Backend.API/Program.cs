@@ -20,6 +20,8 @@ builder.Services.AddAutoMapper(cfg => { }, typeof(AutoMapperProfiles));
 
 builder.Services.AddScoped<IClientRepository, SqlClientRepository>();
 builder.Services.AddScoped<IClientService, SqlClientService>();
+builder.Services.AddScoped<ILockerRepository, SqlLockerRepository>();
+builder.Services.AddScoped<ILockerService, SqlLockerService>();
 
 var app = builder.Build();
 

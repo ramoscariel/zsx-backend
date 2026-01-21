@@ -11,6 +11,10 @@ namespace ZS_Backend.API.Mappings
             // Client
             CreateMap<Client, ClientDto>();
             CreateMap<ClientRequestDto, Client>();
+
+            // Locker
+            CreateMap<Locker, LockerDto>();
+            CreateMap<LockerRequestDto, Locker>();
         }
     }
 }

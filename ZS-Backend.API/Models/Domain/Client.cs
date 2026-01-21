@@ -10,10 +10,4 @@
         public string Address { get; set; }    
         public string Number { get; set; }     
     }
-
-    public enum DocumentType
-    {
-        Cedula = 0,
-        Ruc = 1
-    }
 }
