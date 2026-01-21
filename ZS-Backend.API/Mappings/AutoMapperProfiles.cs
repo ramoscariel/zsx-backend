@@ -15,6 +15,10 @@ namespace ZS_Backend.API.Mappings
             // Locker
             CreateMap<Locker, LockerDto>();
             CreateMap<LockerRequestDto, Locker>();
+
+            // Transaction
+            CreateMap<Transaction, TransactionDto>();
+            CreateMap<TransactionRequestDto, Transaction>();
         }
     }
 }

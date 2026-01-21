@@ -22,6 +22,8 @@ builder.Services.AddScoped<IClientRepository, SqlClientRepository>();
 builder.Services.AddScoped<IClientService, SqlClientService>();
 builder.Services.AddScoped<ILockerRepository, SqlLockerRepository>();
 builder.Services.AddScoped<ILockerService, SqlLockerService>();
+builder.Services.AddScoped<ITransactionRepository, SqlTransactionRepository>();
+builder.Services.AddScoped<ITransactionService, SqlTransactionService>();
 
 var app = builder.Build();
 
