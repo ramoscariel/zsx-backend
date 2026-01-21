@@ -9,8 +9,11 @@ namespace ZS_Backend.API.Models.Domain
         public DateTime? ClosedAt { get; set; }
         public Status Status { get; set; }
         public Guid ClientId { get; set; }
+        public DateOnly CashBoxId { get; set; }
 
         [ForeignKey(nameof(ClientId))]
-        public Client? Client { get; set; }
+        public Client Client { get; set; }
+        [ForeignKey(nameof(CashBoxId))]
+        public CashBox CashBox { get; set; }
     }
 }

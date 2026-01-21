@@ -19,6 +19,10 @@ namespace ZS_Backend.API.Mappings
             // Transaction
             CreateMap<Transaction, TransactionDto>();
             CreateMap<TransactionRequestDto, Transaction>();
+
+            // CashBox
+            CreateMap<CashBox, CashBoxDto>();
+            CreateMap<CashBoxRequestDto, CashBox>();
         }
     }
 }

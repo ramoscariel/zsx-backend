@@ -10,6 +10,5 @@ namespace ZS_Backend.API.Models.DTO
         public Guid ClientId { get; set; }
         [Required]
         public Status Status { get; set; }
-        
     }
 }

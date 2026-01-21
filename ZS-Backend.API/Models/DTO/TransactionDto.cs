@@ -9,6 +9,7 @@ namespace ZS_Backend.API.Models.DTO
         public DateTime OpenedAt { get; set; }
         public DateTime? ClosedAt { get; set; }
         public Status Status { get; set; }
+        public DateOnly CashBoxId { get; set; }
         public ClientDto? Client { get; set; }
     }
 }
