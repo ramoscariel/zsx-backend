@@ -1,0 +1,19 @@
+﻿namespace ZS_Backend.API.Models.Domain
+{
+    public class Client
+    {
+        public Guid Id { get; set; }
+        public string Name { get; set; }
+        public string DocumentNumber { get; set; }
+        public DocumentType DocumentType { get; set; }
+        public string Email { get; set; }      
+        public string Address { get; set; }    
+        public string Number { get; set; }     
+    }
+
+    public enum DocumentType
+    {
+        Cedula = 0,
+        Ruc = 1
+    }
+}
